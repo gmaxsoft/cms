@@ -1,0 +1,12 @@
+[16-Mar-2025 21:20:09 Europe/Berlin] Uncaught exception: 'ParseError' with message 'syntax error, unexpected variable "$post"'
+Stack trace: #0 D:\xampp\htdocs\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('D:\\xampp\\htdocs...')
+#1 D:\xampp\htdocs\app\Controllers\HomeController.php(21): Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#2 [internal function]: App\Controllers\HomeController->index()
+#3 D:\xampp\htdocs\vendor\pecee\simple-router\src\Pecee\SimpleRouter\ClassLoader\ClassLoader.php(34): call_user_func_array(Array, Array)
+#4 D:\xampp\htdocs\vendor\pecee\simple-router\src\Pecee\SimpleRouter\Route\Route.php(117): Pecee\SimpleRouter\ClassLoader\ClassLoader->loadClassMethod(Object(App\Controllers\HomeController), 'index', Array)
+#5 D:\xampp\htdocs\vendor\pecee\simple-router\src\Pecee\SimpleRouter\Router.php(427): Pecee\SimpleRouter\Route\Route->renderRoute(Object(Pecee\Http\Request), Object(Pecee\SimpleRouter\Router))
+#6 D:\xampp\htdocs\vendor\pecee\simple-router\src\Pecee\SimpleRouter\Router.php(353): Pecee\SimpleRouter\Router->routeRequest()
+#7 D:\xampp\htdocs\vendor\pecee\simple-router\src\Pecee\SimpleRouter\SimpleRouter.php(69): Pecee\SimpleRouter\Router->start()
+#8 D:\xampp\htdocs\public\index.php(19): Pecee\SimpleRouter\SimpleRouter::start()
+#9 {main}
+Thrown in 'D:\xampp\htdocs\app\Controllers\AuthController.php' on line 26
